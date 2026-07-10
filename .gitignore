@@ -1,0 +1,11 @@
+# 忽略Python虚拟环境目录
+agent_env/
+
+# Python缓存文件
+__pycache__/
+*.pyc
+*.pyo
+
+# 环境变量、日志文件
+.env
+*.log
