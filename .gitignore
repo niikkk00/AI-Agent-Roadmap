@@ -1,11 +1,16 @@
-# 忽略Python虚拟环境目录
+# 虚拟环境目录（体积大、仅本地有效）
 .venv/
+venv/
 
-# Python缓存文件
+# 本地运行产生的文件
+history.json
 __pycache__/
 *.pyc
-*.pyo
 
-# 环境变量、日志文件
+# 敏感配置文件（后续会存API Key，绝对不能公开）
+config.py
 .env
-*.log
+
+# 编辑器本地配置
+.vscode/
+.idea/
