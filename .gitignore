@@ -8,7 +8,6 @@ __pycache__/
 *.pyc
 
 # 敏感配置文件（后续会存API Key，绝对不能公开）
-config.py
 .env
 
 # 编辑器本地配置
