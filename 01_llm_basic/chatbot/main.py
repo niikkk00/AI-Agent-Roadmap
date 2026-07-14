@@ -10,10 +10,17 @@ while True:
         "role": "user",
         "content": user_input
     })
-    response = send_message(messages)
+    assistant_content = ""
+    print("AI: ", end="", flush=True)
+
+    for content in send_message(messages):
+        print(content, end="", flush=True)
+        assistant_content += content
+
+    print()
+
     messages.append({
-    "role": "assistant",
-    "content": response
-  })
-    print("AI:", response)
+        "role": "assistant",
+        "content": assistant_content
+    })
 
